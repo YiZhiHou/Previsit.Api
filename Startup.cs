@@ -76,13 +76,20 @@ namespace Previsit.Api
             {
                 option.UseNpgsql(Configuration["Db:ExampleDb:ConnectionString"]);
             });
+
+
+            #region IOC
             services.AddSingleton(Configuration);
 
-            //“¿¿µ◊¢»Î
-            //services.AddScoped<IPatientInfoBll, PatientInfoBll>();
+            services.AddScoped<IPatientAccountInfoRepository, PatientAccountInfoRepository>();
+            services.AddScoped<IPatientAccountInfoBll, PatientAccountInfoBll>();
+
             services.AddScoped<IPatientInfoRepository, PatientInfoRepository>();
             services.AddScoped<IPatientInfoBll, PatientInfoBll>();
 
+            services.AddScoped<IFormRecordRepository, FormRecordRepository>();
+            services.AddScoped<IFormRecordBll, FormRecordBll>();
+            #endregion 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

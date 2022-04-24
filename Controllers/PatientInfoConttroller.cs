@@ -1,7 +1,4 @@
-﻿
-
-
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Previsit.Api.Bll.Conmon;
 using Previsit.Api.Bll.Interface;
@@ -47,6 +44,10 @@ namespace Previsit.Api.Controllers
         public async Task<ResultModel> GetPatientInformation(int visit_card_id)
         {
             var result = await _patientInfoBll.GetPatientInfoByVisitCardIdBll(visit_card_id);
+                if(result == null)
+                {
+                return PackResultModel.PackResult(result, HttpStatusCode.NotFound, "未查找到该id");
+            }
             //_logger.LogInformation($"获取患者信息，患者Id为:{visit_card_id}");
             return PackResultModel.PackResult(result, HttpStatusCode.OK, "信息获取成功");
         }
