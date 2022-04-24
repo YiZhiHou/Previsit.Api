@@ -87,6 +87,8 @@ namespace Previsit.Api
             services.AddScoped<IPatientInfoRepository, PatientInfoRepository>();
             services.AddScoped<IPatientInfoBll, PatientInfoBll>();
 
+            services.AddScoped<IFormRecordRepository, FormRecordRepository>();
+            services.AddScoped<IFormRecordBll, FormRecordBll>();
             #endregion 
         }
 

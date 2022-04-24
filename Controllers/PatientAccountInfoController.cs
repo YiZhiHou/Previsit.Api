@@ -69,12 +69,26 @@ namespace Previsit.Api.Controllers
             if (result.ResultFlag == 0)
             {
                 _logger.LogInformation($"患者登录成功，就诊卡号为：{visitCardId}，患者姓名为：{name}");
+                return PackResultModel.PackResult(result, HttpStatusCode.OK, "卡号姓名匹配，登录成功");
             }
-            if (result.ResultFlag == 1 || result.ResultFlag == 2 || result.ResultFlag == 3)
+            else if (result.ResultFlag == 1)
             {
                 _logger.LogInformation($"患者登录失败");
+                return PackResultModel.PackResult(result, HttpStatusCode.NotFound, "姓名不匹配");
             }
-            return PackResultModel.PackResult(result, HttpStatusCode.OK, "就诊卡号，姓名验证结果");
+            else if (result.ResultFlag == 2)
+            {
+                _logger.LogInformation($"患者登录失败");
+                return PackResultModel.PackResult(result, HttpStatusCode.NotFound, "卡号不匹配");
+            }
+            else
+            {
+                _logger.LogInformation($"患者登录失败");
+                return PackResultModel.PackResult(result, HttpStatusCode.NotFound, "卡号姓名不存在");
+            }
+
+
+
         }
     }
 }
