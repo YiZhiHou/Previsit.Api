@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Previsit.Api.Model</id>
+    <version>1.0.0</version>
+    <authors>Previsit.Api.Model</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.AspNetCore.Mvc.Versioning" version="4.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" version="4.1.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="Npgsql.EntityFrameworkCore.PostgreSQL" version="3.1.4" exclude="Build,Analyzers" />
+        <dependency id="Swashbuckle.AspNetCore.Filters" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="prometheus-net.AspNetCore" version="3.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\bin\Release\netcoreapp3.1\Previsit.Api.Model.dll" target="lib\netcoreapp3.1\Previsit.Api.Model.dll" />
+  </files>
+</package>

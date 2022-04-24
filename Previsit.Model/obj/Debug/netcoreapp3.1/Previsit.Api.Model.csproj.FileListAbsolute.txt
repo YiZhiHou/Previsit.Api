@@ -1,0 +1,10 @@
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\bin\Debug\netcoreapp3.1\Previsit.Api.Model.deps.json
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\bin\Debug\netcoreapp3.1\Previsit.Api.Model.dll
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\bin\Debug\netcoreapp3.1\Previsit.Api.Model.pdb
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.AssemblyInfoInputs.cache
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.AssemblyInfo.cs
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.dll
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.pdb
+D:\Program Files (x86)\Microsoft Visual Studio\2022\Test\Previsit.Model\obj\Debug\netcoreapp3.1\Previsit.Api.Model.csproj.AssemblyReference.cache
