@@ -1,20 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using Previsit.Api.Bll;
-using Previsit.Api.Bll.Interface;
-using Previsit.Api.Dal.Repository;
-using Previsit.Api.Dal.Repository.Interface;
 using Prometheus;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using Previsit.Api.Dal.PreDbContext;
-using Microsoft.EntityFrameworkCore;
 
 namespace Previsit.Api
 {
@@ -43,7 +38,7 @@ namespace Previsit.Api
                         .AllowAnyMethod();
                 });
             });
- 
+
             services.AddControllers();
 
 
@@ -66,7 +61,7 @@ namespace Previsit.Api
                 options.OperationFilter<AddResponseHeadersFilter>();
                 options.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
                 options.OperationFilter<SecurityRequirementsOperationFilter>(true, "Bearer");
-                
+
             });
 
             #endregion Swagger

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Previsit.Api.Dal", "..\Prev
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Previsit.Api.Model", "..\Previsit.Model\Previsit.Api.Model.csproj", "{0B82C7D3-8B87-42D1-B141-A47E65671574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Previsit.Api.Bll", "..\Previsit.Api.Bll\Previsit.Api.Bll.csproj", "{FD2D154A-8655-4B17-959E-EB4D47C2E790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Previsit.Api.Bll", "..\Previsit.Api.Bll\Previsit.Api.Bll.csproj", "{FD2D154A-8655-4B17-959E-EB4D47C2E790}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

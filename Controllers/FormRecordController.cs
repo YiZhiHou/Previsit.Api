@@ -1,8 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Previsit.Api.Bll.Conmon;
-using Previsit.Api.Bll.Interface;
-using Previsit.Api.Model.Conmon;
-using Previsit.Api.Model.Models;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -40,6 +36,6 @@ namespace Previsit.Api.Controllers
             var result = await _formRecordBll.AddFormRecord(formRecord);
             return PackResultModel.PackResult(result, HttpStatusCode.OK, "表单添加成功");
         }
-    }   
-      
+    }
+
 }
